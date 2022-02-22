@@ -1,7 +1,5 @@
 use super::*;
 
-use colored::Colorize;
-
 fn included_in_word(word: String, letters: String) -> bool {
     let mut acc: bool = true;
 
@@ -51,7 +49,7 @@ pub fn solve_algorithm(args: parser::Args) {
     let words = solve(wordlist, args.args[0].to_string(), args.args[1].to_string());
 
     for word in words.iter() {
-        println!(" > {}", word.green()); 
+        print::print_words(word.to_string(), args.args[0].to_string());
     }
 
 }
