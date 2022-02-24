@@ -48,8 +48,12 @@ pub fn solve_algorithm(args: parser::Args) {
 
     let words = solve(wordlist, args.args[0].to_string(), args.args[1].to_string());
 
+    println!("Possible Wordles:");
+    println!("-----------------");
     for word in words.iter() {
+        print!("  > ");
         print::print_words(word.to_string(), args.args[0].to_string());
     }
+    println!("-----------------");
 
 }

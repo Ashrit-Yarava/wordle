@@ -13,4 +13,4 @@ Different options of the binary can be used to solve different things.
     * Generate a set of possible starting words that eliminate the most letters.
 
 * help
-    * Just the regular help message.
+    * Help message to show the currently working options.
